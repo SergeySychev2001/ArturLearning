@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Путь к выбранной папке
-const parentFolder = 'D:\\Education\\ArturLearning\\JS\\';
+const directoryPath = 'D:\\Education\\ArturLearning\\JS\\';
 
 const pF = [
 
@@ -12,10 +12,25 @@ const pF = [
 for (let i = 1; i <= 50; i++) {
     const folderName = `${i}`;
 
-    for (let j = 0; j < pF.length; j++) {
-        const folderPath = path.join(parentFolder + pF[j], folderName);
-        fs.mkdirSync(folderPath, { recursive: true });
-    }
+    fs.readdir(directoryPath, { withFileTypes: true }, (err, files) => {
+        if (err) {
+            console.error('Ошибка при чтении директории:', err);
+            return;
+        }
+        const directories = files.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name);
+        for (let j = 0; j < directories.length; j++) {
+            const folderPath = path.join(directoryPath + directories[j], folderName);
+            fs.mkdirSync(folderPath, { recursive: true });
+
+            fs.writeFile(`${folderPath}\\.gitkeep`, '', (err) => {
+                if (err) {
+                    console.error('Ошибка при записи файла:', err);
+                } else {
+                    console.log('Файл успешно создан и записан.');
+                }
+            });
+        }
+    });
 
 }
 
