@@ -17,7 +17,6 @@ for (let i = 1; i <= 50; i++) {
         fs.mkdirSync(folderPath, { recursive: true });
     }
 
-
 }
 
 console.log('Папки были успешно созданы.');
