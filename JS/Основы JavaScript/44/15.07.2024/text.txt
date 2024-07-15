@@ -1,0 +1,6 @@
+Доступ к элементу DOM можно получить с помощью методов, таких как 
+getElementById, 
+getElementsByClassName, 
+getElementsByTagName, 
+querySelector и querySelectorAll.
+
