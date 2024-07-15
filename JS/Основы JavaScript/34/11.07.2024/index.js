@@ -14,3 +14,6 @@ Student.prototype.constructor = Student;
 
 var student = new Student('Алексей', 'Математика');
 student.greet(); // Выведет: Привет, Алексей!
+
+//@Уточнение
+//Смотри, как создавать классы в моем ответе на вопрос 31

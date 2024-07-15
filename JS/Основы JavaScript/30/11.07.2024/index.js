@@ -6,3 +6,6 @@ test.prototype.greet = function () {
 };
 var alex = new Person("Алексей");
 alex.greet(); // Выведет: Привет, Алексей!
+
+//@Вопрос
+//Ты точно понял в чем смысл прототипа объекта?

@@ -6,3 +6,6 @@ let promise = new Promise((resolve, reject) => {
     reject('Ошибка');
   }
 });
+
+//@Вопрос
+//Понимаешь зачем нужен промис?

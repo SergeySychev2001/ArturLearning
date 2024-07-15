@@ -5,3 +5,6 @@ function myFunction() {
 }
 
 myFunction();
+
+//@Уточнение
+//Var не используем.
