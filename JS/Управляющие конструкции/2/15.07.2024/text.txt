@@ -1,0 +1,6 @@
+ JavaScript существуют следующие типы циклов:
+*for
+*while
+*do...while
+*for...in
+*for...of

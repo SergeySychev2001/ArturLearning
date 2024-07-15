@@ -25,5 +25,28 @@ if (number % 2 === 0) {
 }
 console.log(massage);
 // ===== (5) Даны два слова. Проверьте, что первые буквы этих слов совпадают.=====
+<<<<<<< HEAD
 
 // ===== (6) Дано слово. Получите его последнюю букву. Если слово заканчивается на мягкий знак, то получите предпоследнюю букву.=====
+=======
+let word1 = "Тест";
+let word2 = "текст";
+function test() {
+  if (word1.charAt(0).toLowerCase() === word2.charAt(0).toLowerCase()) {
+    return "буквы совпадают";
+  } else {
+    return "буквы не совпадают";
+  }
+}
+console.log(test(word1, word2));
+// ===== (6) Дано слово. Получите его последнюю букву. Если слово заканчивается на мягкий знак, то получите предпоследнюю букву.=====
+function strLastes(word) {
+  if (word.endsWith("ь")) {
+    return word.charAt(word.length - 2);
+  } else {
+    return word.charAt(word.length - 1);
+  }
+}
+
+console.log(strLastes("тесть"));
+>>>>>>> 25ae257 (15.07)
