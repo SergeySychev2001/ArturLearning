@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отслеживание ориентации устройства</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .orientation {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="orientation" id="orientation">Текущая ориентация: портрет</div>
+
+    <script>
+        function updateOrientation() {
+            const orientationDiv = document.getElementById('orientation');
+            if (window.orientation === 0 || window.orientation === 180) {
+                orientationDiv.textContent = 'Текущая ориентация: портрет';
+            } else {
+                orientationDiv.textContent = 'Текущая ориентация: альбомная';
+            }
+        }
+
+        // Добавляем обработчик события изменения ориентации
+        window.addEventListener('orientationchange', updateOrientation);
+
+        // Вызываем функцию при загрузке страницы
+        updateOrientation();
+    </script>
+</body>
+</html>

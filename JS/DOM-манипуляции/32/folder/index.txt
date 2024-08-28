@@ -1,0 +1,2 @@
+32. Какие методы существуют для работы с CSS-классами?
+Методы `classList.add`, `classList.remove`, `classList.toggle`, и `classList.contains`.

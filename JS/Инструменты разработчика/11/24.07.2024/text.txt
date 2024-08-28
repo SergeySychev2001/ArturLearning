@@ -1,0 +1,6 @@
+Полезные расширения включают:
+- React Developer Tools
+- Redux DevTools
+- Web Developer
+- Lighthouse
+- Wappalyzer

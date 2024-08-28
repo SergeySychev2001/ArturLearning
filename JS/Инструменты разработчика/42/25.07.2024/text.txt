@@ -1,0 +1,3 @@
+Библиотеки для визуализации: D3.js, Chart.js, Plotly, Google Charts.
+Инструменты BI: Tableau, Power BI, Google Data Studio.
+Веб-технологии: использование HTML5 Canvas, SVG для создания кастомных графиков и диаграмм.

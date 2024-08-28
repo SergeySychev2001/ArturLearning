@@ -1,0 +1,3 @@
+- Git (и его GUI клиентами: GitHub Desktop, Sourcetree, GitKraken).
+- Системы управления версиями (SVN, Mercurial).
+- Платформы для хостинга репозиториев (GitHub, GitLab, Bitbucket).

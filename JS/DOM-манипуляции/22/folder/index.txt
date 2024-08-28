@@ -1,0 +1,2 @@
+Как получить следующий или предыдущий элемент-сосед?
+Используйте `nextElementSibling` и `previousElementSibling`.

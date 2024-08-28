@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myDiv"><p>Текст</p></div>
+
+    <script>
+      const div = document.getElementById("myDiv");
+      div.innerHTML = "<h1>Заголовок</h1>"; // Заменяет содержимое
+      console.log(div.outerHTML); // <div id="myDiv"><h1>...</h1></div>
+    </script>
+  </body>
+</html>

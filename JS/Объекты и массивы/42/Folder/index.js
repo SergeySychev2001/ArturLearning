@@ -1,0 +1,1 @@
+let isFrozen = Object.isFrozen(obj); // Вернет true, если объект заморожен

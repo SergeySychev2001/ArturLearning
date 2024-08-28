@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отслеживание ошибок в JavaScript</title>
+    <script>
+        // Глобальный обработчик ошибок
+        window.onerror = function (message, source, lineno, colno, error) {
+            // Вывод информации об ошибке в консоль
+            console.error("Произошла ошибка:");
+            console.error("Сообщение: " + message);
+            console.error("Источник: " + source);
+            console.error("Строка: " + lineno);
+            console.error("Столбец: " + colno);
+            console.error("Объект ошибки: ", error);
+            
+            // Вы можете также уведомить пользователя
+            alert("Произошла ошибка: " + message);
+            
+            // Возвращаем true, чтобы предотвратить дальнейшую обработку ошибки
+            return true;
+        };
+
+        // Пример кода, который вызывает ошибку
+        function triggerError() {
+            // Эта строка вызовет ошибку, так как переменная notDefined не определена
+            console.log(notDefinedVariable);
+        }
+    </script>
+</head>
+<body>
+    <h1>Отслеживание ошибок</h1>
+    <button onclick="triggerError()">Сгенерировать ошибку</button>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Синтаксис остаточных параметров функции позволяет представлять неограниченное множество аргументов в виде массива.
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/rest_parameters

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="observeDiv">Наблюдайте за изменениями</div>
+
+    <script>
+      const targetNode = document.getElementById("observeDiv");
+      const config = { attributes: true, childList: true, subtree: true };
+      const callback = function (mutationsList) {
+        for (let mutation of mutationsList) {
+          console.log("Изменение:", mutation);
+        }
+      };
+
+      const observer = new MutationObserver(callback);
+      observer.observe(targetNode, config);
+      targetNode.innerHTML = "Измененный текст"; // Запустит callback
+    </script>
+  </body>
+</html>

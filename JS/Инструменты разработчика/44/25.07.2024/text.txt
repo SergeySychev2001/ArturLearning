@@ -1,0 +1,3 @@
+Инструменты разработчика (DevTools): Chrome DevTools, Firefox Developer Edition, Safari Web Inspector для отладки JavaScript, CSS и HTML.
+Инструменты для удаленного дебаггинга: например, Remote Debugging.
+Расширения и плагины: такие как React Developer Tools, Vue.js Devtools для отладки специфических фреймворков.

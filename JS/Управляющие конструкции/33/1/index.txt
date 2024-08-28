@@ -1,0 +1,3 @@
+Метки служат для обозначения конкретных циклов и могут использоваться с оператором `break` или 
+`continue`, чтобы управлять выполнением циклов. 
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/label

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="draggable" draggable="true">Drag me!</div>
+<div id="dropzone" style="width: 200px; height: 200px; border: 1px solid #000;"></div>
+<script>
+    const draggable = document.getElementById('draggable');
+    const dropzone = document.getElementById('dropzone');
+
+    draggable.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text/plain', 'This is a draggable element');
+    });
+
+    dropzone.addEventListener('dragover', (e) => {
+        e.preventDefault(); // Чтобы разрешить сброс элементов
+    });
+
+    dropzone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        console.log(e.dataTransfer.getData('text/plain'));
+    });
+</script>
+</body>
+</html>

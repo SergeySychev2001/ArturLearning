@@ -1,0 +1,6 @@
+Некоторые распространенные типы событий:
+- Mouse Events: `click`, `dblclick`, `mouseover`, `mouseout`, `mousemove`
+- Keyboard Events: `keydown`, `keyup`, `keypress`
+- Form Events: `submit`, `change`, `focus`, `blur`
+- Window Events: `load`, `resize`, `scroll`
+- Touch Events: `touchstart`, `touchmove`, `touchend`

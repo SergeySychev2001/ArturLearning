@@ -10,5 +10,5 @@ function myFunction() {
 console.log(globalVar);
 console.log(localVar);
 
-//@Уточнение
+//@Уточнение(15.07.2024)
 //Вообще не используй никогда var. Это устаревший способ задания переменной. Используй let или const

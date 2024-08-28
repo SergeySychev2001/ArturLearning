@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отслеживание фокуса</title>
+    <style>
+        input {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .focused {
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Отслеживание событий фокуса</h1>
+
+<input type="text" id="input1" placeholder="Поле 1">
+<input type="text" id="input2" placeholder="Поле 2">
+
+<p id="status"></p>
+
+<script>
+    const input1 = document.getElementById('input1');
+    const input2 = document.getElementById('input2');
+    const status = document.getElementById('status');
+
+    // Обработчик события focus
+    function handleFocus(event) {
+        event.target.classList.add('focused');
+        status.textContent = `Фокус на: ${event.target.placeholder}`;
+    }
+
+    // Обработчик события blur
+    function handleBlur(event) {
+        event.target.classList.remove('focused');
+        status.textContent = 'Нет фокуса';
+    }
+
+    // Добавление обработчиков к элементам
+    input1.addEventListener('focus', handleFocus);
+    input1.addEventListener('blur', handleBlur);
+
+    input2.addEventListener('focus', handleFocus);
+    input2.addEventListener('blur', handleBlur);
+</script>
+
+</body>
+</html>

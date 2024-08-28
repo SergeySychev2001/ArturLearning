@@ -1,0 +1,4 @@
+22. Как использовать `async` и `await`?
+
+`async` и `await` позволяют вам писать асинхронный код, который выглядит как синхронный
+https://learn.javascript.ru/async-await

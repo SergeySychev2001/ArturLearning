@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox">
+<select id="mySelect">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+</select>
+
+<script>
+    document.getElementById('myCheckbox').addEventListener('change', function() {
+        console.log('Checkbox is ' + (this.checked ? 'checked' : 'unchecked'));
+    });
+
+    document.getElementById('mySelect').addEventListener('change', function() {
+        console.log('Selected option: ' + this.value);
+    });
+</script>
+</body>
+</html>

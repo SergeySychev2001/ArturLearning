@@ -1,5 +1,6 @@
-if (0) {
-    console.log("Это ложное значение");
-} else {
+let x = "";
+if (x) {
     console.log("Это истинное значение");
+} else {
+    console.log("Это ложное значение");
 }

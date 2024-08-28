@@ -1,0 +1,2 @@
+39. Какие методы существуют для работы с `iframe`?
+Методы `contentWindow` и `contentDocument`.

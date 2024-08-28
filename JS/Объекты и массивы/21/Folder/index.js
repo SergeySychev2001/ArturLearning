@@ -1,0 +1,1 @@
+let updatedArr = arr.map(x => x + 1);

@@ -1,0 +1,2 @@
+- Основные команды: `git clone`, `git status`, `git add`, `git commit`, `git push`, `git pull`, `git branch`, `git checkout`.
+- Использование Git Bash или терминала для выполнения команд.

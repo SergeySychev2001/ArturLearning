@@ -1,0 +1,3 @@
+- UglifyJS или Terser для минификации JavaScript.
+- CSSNano или PostCSS для обработки CSS.
+- Webpack или Gulp для объединения файлов.

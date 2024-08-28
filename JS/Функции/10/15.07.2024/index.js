@@ -1,8 +1,9 @@
-function asdf() {
-    let test = 'значение';
-    return function asd() {
-        console.log(переменная);
-    };
+function outerFunction() {
+    let outerVar = "Я из внешней функции";
+    function innerFunction() {
+        console.log(outerVar); 
+    }
+    return innerFunction;
 }
-const word = asdf();
-word(); // 'значение'
+const inner = outerFunction();
+inner(); 

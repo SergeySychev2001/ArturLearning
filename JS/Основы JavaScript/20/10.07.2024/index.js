@@ -6,5 +6,5 @@ function myFunction() {
 
 myFunction();
 
-//@Уточнение
+//@Уточнение(15.07.2024)
 //Var не используем.

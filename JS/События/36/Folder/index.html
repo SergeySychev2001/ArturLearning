@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отслеживание событий жизненного цикла страницы</title>
+    <script>
+        // Событие load срабатывает, когда вся страница загружена
+        window.addEventListener('load', function() {
+            console.log('Страница загружена');
+            // Здесь можно выполнить код после загрузки страницы
+        });
+
+        // Событие unload срабатывает, когда страница покидается
+        window.addEventListener('unload', function() {
+            console.log('Страница покидается');
+            // Здесь можно выполнить код перед покиданием страницы
+        });
+
+        // Альтернативный вариант для события beforeunload
+        // Это событие позволяет отображать предупреждение перед уходом со страницы
+        window.addEventListener('beforeunload', function(event) {
+            event.preventDefault(); // Отменяем стандартное действие
+            event.returnValue = ''; // Многие браузеры игнорируют это значение
+        });
+    </script>
+</head>
+<body>
+    <h1>Отслеживание событий жизненного цикла страницы</h1>
+    <p>Откройте консоль разработчика, чтобы увидеть сообщения при загрузке и уходе со страницы.</p>
+</body>
+</html>

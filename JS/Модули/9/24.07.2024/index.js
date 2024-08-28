@@ -1,0 +1,1 @@
+import * as myModule from './myModule.js'

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отслеживание URL</title>
+</head>
+<body>
+    <h1>Отслеживание изменений URL</h1>
+    <button id="changeUrlBtn">Изменить URL</button>
+    <p id="currentUrl">Текущий URL: <span id="urlDisplay"></span></p>
+
+    <script>
+        // Функция для обновления отображаемого URL
+        function updateUrlDisplay() {
+            document.getElementById('urlDisplay').innerText = window.location.href;
+        }
+
+        // Обработчик события popstate
+        window.addEventListener('popstate', function(event) {
+            console.log('URL изменился на:', window.location.href);
+            updateUrlDisplay(); // Обновляем отображаемый URL
+        });
+
+        // Функция для изменения URL без перезагрузки страницы
+        function changeUrl(newUrl, state) {
+            history.pushState(state, '', newUrl);
+            console.log('URL изменен на:', window.location.href);
+            updateUrlDisplay(); // Обновляем отображаемый URL
+        }
+
+        // Устанавливаем текущий URL при загрузке страницы
+        updateUrlDisplay();
+
+        // Обработчик кнопки для изменения URL
+        document.getElementById('changeUrlBtn').addEventListener('click', function() {
+            changeUrl('/new-page', { someData: 'example' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv" style="margin-top: 100vh; height: 100px;"></div>
+
+<script>
+const div = document.getElementById('myDiv');
+
+window.addEventListener('scroll', () => {
+    const rect = div.getBoundingClientRect();
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        console.log('Элемент видим!');
+    } else {
+        console.log('Элемент не виден.');
+    }
+});
+</script>
+</body>
+</html>

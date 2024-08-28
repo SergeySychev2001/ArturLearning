@@ -1,0 +1,2 @@
+Какие методы существуют для вставки HTML-кода?
+Методы как `insertAdjacentHTML`, `appendChild`, `insertBefore`, и `innerHTML` могут использоваться для вставки HTML.

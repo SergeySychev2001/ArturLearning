@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отслеживание состояния сети</title>
+    <style>
+        #status {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+        .online {
+            background-color: green;
+        }
+        .offline {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проверка состояния сети</h1>
+    <div id="status" class="online">Состояние сети: В сети</div>
+
+    <script>
+        function updateOnlineStatus() {
+            const statusDiv = document.getElementById('status');
+            if (navigator.onLine) {
+                statusDiv.textContent = 'Состояние сети: В сети';
+                statusDiv.className = 'online';
+            } else {
+                statusDiv.textContent = 'Состояние сети: Офлайн';
+                statusDiv.className = 'offline';
+            }
+        }
+
+        // Обработчики событий для online и offline
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+
+        // Инициализация статуса при загрузке страницы
+        updateOnlineStatus();
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Среды разработки: Android Studio, Xcode.
+Библиотеки и фреймворки: React Native, Flutter, Xamarin для кроссплатформенной разработки.
+Инструменты для тестирования: Appium, TestFlight, Firebase Test Lab.

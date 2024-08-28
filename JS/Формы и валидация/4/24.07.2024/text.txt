@@ -1,0 +1,16 @@
+Какие существуют значения атрибута `type` для ввода данных в форму?
+- text
+- password
+- email
+- number
+- tel
+- url
+- date
+- time
+- checkbox
+- radio
+- file
+-hidden
+- search
+- color
+- и т.д.

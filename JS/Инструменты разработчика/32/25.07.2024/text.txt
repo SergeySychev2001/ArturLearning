@@ -1,0 +1,1 @@
+- Использование Jenkins, GitHub Actions, GitLab CI/CD, CircleCI для автоматизации тестирования и развертывания.

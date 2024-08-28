@@ -1,0 +1,2 @@
+46. Что такое и как работает новый метод `Number.parseInt()` и `Number.parseFloat()`?
+Эти методы являются аналогами `parseInt` и `parseFloat`, но относятся к объекту `Number`:

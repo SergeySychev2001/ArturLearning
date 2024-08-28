@@ -1,0 +1,2 @@
+ 48. Какие есть методы для работы с `shadow DOM`?
+Методы `attachShadow` и `shadowRoot` для работы с теневым DOM.

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv" style="width: 150px; height: 100px; border: 1px solid;"></div>
+
+<script>
+const div = document.getElementById('myDiv');
+const rect = div.getBoundingClientRect();
+console.log(rect.width, rect.height, rect.top, rect.left);
+</script>
+</body>
+</html>

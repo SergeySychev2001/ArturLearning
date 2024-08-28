@@ -1,0 +1,3 @@
+- Fetch API для работы с запросами.
+- Axios для работы с HTTP-запросами.
+- Postman или Insomnia для тестирования API.

@@ -1,0 +1,2 @@
+15. Какие инструменты сборки поддерживают модули JavaScript?
+Инструменты сборки, такие как Webpack, Rollup, Parcel и Browserify, поддерживают модули JavaScript.

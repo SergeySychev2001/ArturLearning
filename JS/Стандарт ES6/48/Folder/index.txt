@@ -1,0 +1,2 @@
+48. Как в ES6 использовать новые методы `String.raw()` и `String.fromCodePoint()`?
+`String.raw()` создает строку, игнорируя экранирование, а `String.fromCodePoint()` позволяет создавать строки из кодовых точек Unicode

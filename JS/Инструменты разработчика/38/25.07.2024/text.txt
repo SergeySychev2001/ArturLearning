@@ -1,0 +1,2 @@
+ESLint для проверки качества JavaScript кода.
+TSLint для TypeScript (заменен на ESLint с использованием плагина).

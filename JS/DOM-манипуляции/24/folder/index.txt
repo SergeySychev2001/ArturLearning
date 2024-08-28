@@ -1,0 +1,2 @@
+24. Как создать текстовый узел в DOM?
+Используйте `document.createTextNode`.

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+        Text node
+        <span>Children 1</span>
+        <span>Children 2</span>
+    </div>
+    
+    <script>
+    const div = document.getElementById('myDiv');
+    console.log(div.childNodes.length); // 3 (включая текстовый узел)
+    console.log(div.children.length);    // 2 (только элементы)
+    </script>
+</body>
+</html>
